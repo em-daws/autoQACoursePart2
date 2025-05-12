@@ -12,10 +12,10 @@ public class Task17_1 {
     public static void main(String[] args) throws InterruptedException {
         WebDriver browser = new ChromeDriver();
 
-        Runtime.getRuntime().addShutdownHook(new Thread(browser::quit));
+        Runtime.getRuntime().addShutdownHook(new Thread(browser::quit)); //instead of "try" block
 
         browser.manage().window().maximize();
-        browser.get("https://guest:welcome2qauto@qauto.forstudy.space/"); //instead of "try" block
+        browser.get("https://guest:welcome2qauto@qauto.forstudy.space/");
 
         WebElement guestLogInBtn = browser.findElement(By.cssSelector("div.header_right > button.-guest"));
         guestLogInBtn.click();
