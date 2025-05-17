@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite18" verbose="1">
+    <test name="HomeworkRegression18">
+        <classes>
+            <class name="homework.lection18.CalculatorTest"/>
+<!--            <class name="practice.lection18.TriangleTest"/>-->
+        </classes>
+    </test>
+</suite>
