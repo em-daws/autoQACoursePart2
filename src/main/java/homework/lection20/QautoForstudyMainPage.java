@@ -12,8 +12,14 @@ public class QautoForstudyMainPage {
 
     WebDriver driver;
 
+    @FindBy(css = ".header_logo > svg")
+    public WebElement logo;
+
     @FindBy(css = "button.-guest")
     public WebElement guestLogInBtn;
+
+    @FindBy(css = "button.btn-primary")
+    public WebElement signUpBtn;
 
     public QautoForstudyMainPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
