@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class QautoForstudyMainPage {
 
-    WebDriver driver;
+    private final WebDriver driver;
 
     @FindBy(css = ".header_logo > svg")
     public WebElement logo;
