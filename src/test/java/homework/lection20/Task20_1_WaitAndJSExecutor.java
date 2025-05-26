@@ -72,10 +72,6 @@ public class Task20_1_WaitAndJSExecutor {
     @AfterMethod
     public void tearDown() {
         driver.quit();
-    }
-
-    @AfterClass
-    public void tearDownClass() {
         driver = null;
     }
 }
