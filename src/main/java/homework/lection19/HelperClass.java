@@ -4,7 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
+import java.util.Locale;
 
 public class HelperClass {
 
@@ -35,5 +38,11 @@ public class HelperClass {
             }
         }
         return navigatedSuccessfully;
+    }
+
+    public static String getCurrentDateAsAStringInSpecificFormat(String format) {
+        Date currentDate = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat(format, Locale.getDefault());
+        return dateFormat.format(currentDate);
     }
 }
