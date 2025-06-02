@@ -38,7 +38,7 @@ public class GaragePage {
 
     //Menu interactions-------------------------------------------------------------------------
 
-    public void clickMenuInteractions() {
+    public void clickMenuInstructions() {
         menuInstractions.click();
     }
 

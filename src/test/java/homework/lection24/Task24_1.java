@@ -53,7 +53,7 @@ public class Task24_1 extends BaseTest {
         GaragePage garagePage = new GaragePage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://guest:welcome2qauto@qauto.forstudy.space/panel/garage");
 
-        garagePage.clickMenuInteractions();
+        garagePage.clickMenuInstructions();
 
         InstructionsPage instructionsPage = new InstructionsPage(driver);
         instructionsPage.clickDownloadLinkByName("Front windshield wipers on Audi TT");
@@ -82,7 +82,7 @@ public class Task24_1 extends BaseTest {
         GaragePage garagePage = new GaragePage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://guest:welcome2qauto@qauto.forstudy.space/panel/garage");
 
-        garagePage.clickMenuInteractions();
+        garagePage.clickMenuInstructions();
         InstructionsPage instructionsPage = new InstructionsPage(driver);
         List<String> allCarBrandsList = instructionsPage.getAllCarBrands();
 
