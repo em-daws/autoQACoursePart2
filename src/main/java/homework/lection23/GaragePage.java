@@ -13,6 +13,9 @@ public class GaragePage {
     @FindBy(css = "modal-content")
     public WebElement addCarModal;
 
+    @FindBy(css = "nav.sidebar > a[routerlink=\"instructions\"]")
+    public WebElement menuInstractions;
+
     @FindBy(className = "car-item")
     public WebElement carCard;
     @FindBy(css = "img.car-logo_img")
@@ -32,6 +35,14 @@ public class GaragePage {
     public void clickAddCarBtn() {
         addCarBtn.click();
     }
+
+    //Menu interactions-------------------------------------------------------------------------
+
+    public void clickMenuInteractions() {
+        menuInstractions.click();
+    }
+
+    //-------------------------------------------------------------------------------------------
 
     //Car Card Methods---------------------------------------------------------------------------
 

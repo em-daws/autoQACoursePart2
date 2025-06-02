@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 public class HelperClass {
@@ -44,5 +45,14 @@ public class HelperClass {
         Date currentDate = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat(format, Locale.getDefault());
         return dateFormat.format(currentDate);
+    }
+
+    public static String expectedFormat(List<String> lines) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (CharSequence line : lines) {
+            stringBuilder.append(line);
+            stringBuilder.append(System.lineSeparator());
+        }
+        return stringBuilder.toString();
     }
 }
