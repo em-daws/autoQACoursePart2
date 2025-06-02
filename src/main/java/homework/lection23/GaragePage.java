@@ -1,5 +1,6 @@
 package homework.lection23;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,6 +33,7 @@ public class GaragePage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Click 'Add Car' button")
     public void clickAddCarBtn() {
         addCarBtn.click();
     }
@@ -84,21 +86,25 @@ public class GaragePage {
             PageFactory.initElements(driver, this);
         }
 
+        @Step("Select brand")
         public void selectBrand(String brand) {
             brandDropdownList.click();
             brandDropdownList.sendKeys(brand);
         }
 
+        @Step("Select model")
         public void selectModel(String model) {
             modelDropdownList.click();
             modelDropdownList.sendKeys(model);
         }
 
+        @Step("Select mileage")
         public void selectMileage(String mileage) {
             mileageField.click();
             mileageField.sendKeys(mileage);
         }
 
+        @Step("Click 'Add' button")
         public void clickAddBtn() {
             addBtn.click();
         }

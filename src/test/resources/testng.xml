@@ -5,7 +5,7 @@
         <classes>
 <!--            <class name="homework.lection18.CalculatorTest"/>-->
 <!--            <class name="practice.lection18.TriangleTest"/>-->
-            <class name="homework.lection21.Task21_1"/>
+            <class name="homework.lection23.Task25_1"/>
         </classes>
     </test>
 </suite>

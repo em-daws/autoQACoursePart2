@@ -1,6 +1,7 @@
 package homework.lection20;
 
 import homework.lection19.HelperClass;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -44,6 +45,7 @@ public class QautoForstudyMainPage {
         this.driver = driver;
     }
 
+    @Step("Click 'Guest Log In' button")
     public void clickGuestLogInBtn() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", guestLogInBtn);
